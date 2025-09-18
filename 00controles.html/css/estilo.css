@@ -1,0 +1,105 @@
+̣/* CSS Atividade 2 */
+
+.tabela-periodica {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabela-periodica td {
+    border: 1px solid black;
+    width: 5.5%;
+    /* Largura de cada célula */
+    height: 90px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.elemento b {
+    font-size: 20px;
+}
+
+/* Símbolo do elemento em destaque */
+.vazio {
+    border: none;
+}
+
+/* Células de espaçamento sem borda */
+
+/* Cores para os grupos de elementos */
+.nao-metal {
+    background-color: #a1ffc3;
+}
+
+.gas-nobre {
+    background-color: #d1d1ff;
+}
+
+.alcalino {
+    background-color: #ffc8a1;
+}
+
+.terroso {
+    background-color: #ffffa1;
+}
+
+.metaloide {
+    background-color: #c8c8a1;
+}
+
+.halogenio {
+    background-color: #a1ffff;
+}
+
+.metal-transicao {
+    background-color: #ffc0c0;
+}
+
+.metal-pos-transicao {
+    background-color: #d1d1d1;
+}
+
+.lantanideo {
+    background-color: #a1ffef;
+}
+
+.actinideo {
+    background-color: #e0c8ff;
+}
+
+
+/* CSS Atividade 3 */
+
+.tabuleiro-xadrez {
+    margin: 20px auto;
+    /* Centraliza o tabuleiro na página */
+    border-collapse: collapse;
+    border: 2px solid #603913;
+    /* Borda de madeira escura */
+}
+
+.tabuleiro-xadrez td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 42px;
+    /* Tamanho das peças */
+}
+
+/* Cores das casas */
+.casa-clara {
+    background-color: #f0d9b5;
+}
+
+.casa-escura {
+    background-color: #b58863;
+}
+
+/* Células de notação (letras e números) */
+.notacao {
+    background-color: #dcdcdc;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
