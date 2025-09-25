@@ -1,105 +1,100 @@
-̣/* CSS Atividade 2 */
+/*
+tipos de aplicacao de estilos
 
-.tabela-periodica {
-    border-collapse: collapse;
-    width: 100%;
+table {} ->            Seletor de tipo (tag)
+
+.minhaTabela {} ->     Seletor de classe
+
+#meuId {} ->           Seletor de ID
+
+* {} ->                Seletor universal
+
+input[type="text"] ->  Seletor de atributo
+
+div p () ->            Seletor descendente
+
+a:hover {} ->          Pseudo-classe
+
+p::first-line {} ->    Pseudo-elemento
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
 
-.tabela-periodica td {
-    border: 1px solid black;
-    width: 5.5%;
-    /* Largura de cada célula */
-    height: 90px;
+h1 {
     text-align: center;
-    vertical-align: middle;
-    font-size: 12px;
+    transition: 5s;
 }
 
-.elemento b {
-    font-size: 20px;
-}
-
-/* Símbolo do elemento em destaque */
-.vazio {
-    border: none;
-}
-
-/* Células de espaçamento sem borda */
-
-/* Cores para os grupos de elementos */
-.nao-metal {
-    background-color: #a1ffc3;
-}
-
-.gas-nobre {
-    background-color: #d1d1ff;
-}
-
-.alcalino {
-    background-color: #ffc8a1;
-}
-
-.terroso {
-    background-color: #ffffa1;
-}
-
-.metaloide {
-    background-color: #c8c8a1;
-}
-
-.halogenio {
-    background-color: #a1ffff;
-}
-
-.metal-transicao {
-    background-color: #ffc0c0;
-}
-
-.metal-pos-transicao {
-    background-color: #d1d1d1;
-}
-
-.lantanideo {
-    background-color: #a1ffef;
-}
-
-.actinideo {
-    background-color: #e0c8ff;
-}
-
-
-/* CSS Atividade 3 */
-
-.tabuleiro-xadrez {
-    margin: 20px auto;
-    /* Centraliza o tabuleiro na página */
+table {
     border-collapse: collapse;
-    border: 2px solid #603913;
-    /* Borda de madeira escura */
+    width: 800px;
+    margin: auto;
 }
 
-.tabuleiro-xadrez td {
-    width: 60px;
-    height: 60px;
+td {
+    padding: 8px;
+    vertical-align: top;
+}
+
+.secao-titulo {
+    background-color: #333;
+    color: white;
     text-align: center;
-    vertical-align: middle;
-    font-size: 42px;
-    /* Tamanho das peças */
-}
-
-/* Cores das casas */
-.casa-clara {
-    background-color: #f0d9b5;
-}
-
-.casa-escura {
-    background-color: #b58863;
-}
-
-/* Células de notação (letras e números) */
-.notacao {
-    background-color: #dcdcdc;
-    font-size: 14px;
     font-weight: bold;
-    color: #333;
+    padding: 10px;
+}
+
+.subsecao-titulo {
+    background-color: #666;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #008CBA;
+}
+
+.button3 {
+    background-color: #F44336;
+}
+
+.button4 {
+    background-color: #E7E7E7;
+    color: black;
+}
+
+.button5 {
+    background-color: #555555;
+}
+
+fieldset {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.tip {
+    border-radius: 5px;
+    background-color: cornsilk;
+    padding: 8px;
 }
