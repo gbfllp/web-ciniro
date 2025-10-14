@@ -271,6 +271,9 @@
             </td>
         </tr>
     </table>
+    URL:
+    <input type="url" id="txtUrl" />
+    <input type="image" src="img/arrr.png" height="15" onclick="location.href = 'http://' + document.getElementById('txtUrl').value" />
 
     <!-- JS -->
     <script src="js/script.js"></script>

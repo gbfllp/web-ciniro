@@ -326,6 +326,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       echo "<span class='vazio'>Nao selecionado</span>";
    }
    echo "</div>";
+
+   echo "<div class='campo'>";
+   if (isset($_POST['rdbFxEtaria'])) {
+      echo "<span class='nome-campo'>rdbFxEtaria (type=radio):</span>";
+      echo "<span class='valor-campo'>" . htmlspecialchars($_POST['rdbFxEtaria']);
+      #traduz o valor para exibicao
+      $fxEtaria = array('020' => '0 a 20 anos', '2140' => '21 a 40 anos', '4160' => '41 a 60 anos', '61' => 'Mais de 61 anos');
+      if (isset($fxEtaria[$_POST['rdbFxEtaria']])) {
+         echo " (" . $fxEtaria[$_POST['rdbFxEtaria']] . ")";
+      }
+      echo "</span>";
+   } else {
+      echo "<span class='nome-campo'>rdbGenero:</span>";
+      echo "<span class='vazio'>Nao selecionado</span>";
+   }
+   echo "</div>";
    
    #campos checkbox - multiplas selecoes de interesses
    echo "<div class='campo'>";
@@ -457,6 +473,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    if (!$algum_contato) {
       echo "<span class='vazio'>Nenhuma forma de contato selecionada</span>";
    }
+   echo "</div>";
+   echo "</div>";
+
+   echo "<div class='campo'>";
+   echo "<span class='nome-campo'>Legenda (fieldset checkbox):</span><br>";
+   echo "<div class='array'>";
+   $algum_contato = false;
+   if (isset($_POST['txtA'])) {
+      echo "✓ (valor: " . htmlspecialchars($_POST['txtA']) . ")<br>";
+   }
+   echo "✓ (valor: " . htmlspecialchars($_POST['slcB']) . ")<br>";
+   echo "✓ (valor: " . htmlspecialchars($_POST['rdbC']) . ")<br>";
    echo "</div>";
    echo "</div>";
    

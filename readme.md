@@ -9,3 +9,4 @@ Basic notions of tables, td, tr and some CSS. Periodic and chess tables were cre
 Part 2: HTML Entities
 Part 3: Show post forms as you can see on processa.php
 Part 4: More form components, including image submit and interactive equalizer with JavaScript
+Part 5: Last components and page redirect with JavaScript
