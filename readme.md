@@ -11,5 +11,11 @@ Part 3: Show post forms as you can see on processa.php
 Part 4: More form components, including image submit and interactive equalizer with JavaScript
 Part 5: Last components and page redirect with JavaScript
 
-## 01login.session
+### 01login.session
 Initial steps using $_SESSION: a simple menu with login and 3 restrict pages
+
+### 02upload
+Basic upload form with cropped image
+
+### 03banco.simples
+acesso_direto > Basic notions with MySQL
