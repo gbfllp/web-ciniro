@@ -19,3 +19,4 @@ Basic upload form with cropped image
 
 ### 03banco.simples
 acesso_direto > Basic notions with MySQL
+singleton > project patterns
